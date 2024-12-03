@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Application Form Nirmal's Courses</h1>
+        <p id="description" class="description text-center">
+          Thank you for choosing us to enrich your future.
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>Which option best describes your current role ?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Would you recommend Nirmal's Courses to a friend ?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Definitely</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Maybe</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Not sure</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>What is the purpose of following our courses ?</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="academic-performance">To increase my academic performances</option>
+            <option value="career-promotion">To get a promotion in my career</option>
+            <option value="knowledge">Just for my knowledge</option>
+            <option value="test-level">To test my knowledge</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What are the program/s you want to follow ? 
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="responsive-web-design-certification"
+              type="checkbox"
+              class="input-checkbox"
+            />Responsive Web Design Certification</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="javaScript-algorithms-and-data-structures-certification"
+              type="checkbox"
+              class="input-checkbox"
+            />JavaScript Algorithms and Data Structures Certification</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="front-end-development-libraries-certification"
+              type="checkbox"
+              class="input-checkbox"
+            />Front End Development Libraries Certification</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="data-visualization-certification"
+              type="checkbox"
+              class="input-checkbox"
+            />Data Visualization Certification</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="relational-database-certification"
+              type="checkbox"
+              class="input-checkbox"
+            />Relational Database Certification</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="back-end-development-and-apis-certification"
+              type="checkbox"
+              class="input-checkbox"
+            />Back End Development End API's Certification</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="quality-assuarance-certification"
+              type="checkbox"
+              class="input-checkbox"
+            />Quality Assuarance Certification</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="scientific-computing-with-python-certification"
+              type="checkbox"
+              class="input-checkbox"
+            />Scientific Computing with Python Certification</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="wiki"
+              type="checkbox"
+              class="input-checkbox"
+            />Wiki</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="data-analysis-with-python-certification"
+              type="checkbox"
+              class="input-checkbox"
+            />Data Analysis with Python Certification</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="information-security-certification"
+              type="checkbox"
+              class="input-checkbox"
+            />Information Security Certification</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="machine-learning-with-python-certification"
+              type="checkbox"
+              class="input-checkbox"
+            />Machine Learning with Python Certification</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="college-algebra-with-python-certification"
+              type="checkbox"
+              class="input-checkbox"
+            />College Algebra with Python Certification</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="foundational-c#-with-microsoft-certification"
+              type="checkbox"
+              class="input-checkbox"
+            />Foundational C# with Microsoft Certification</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="coding-interview-prep"
+              type="checkbox"
+              class="input-checkbox"
+            />Coding Interview Prep</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="project-eular"
+              type="checkbox"
+              class="input-checkbox"
+            />Project Eular</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
